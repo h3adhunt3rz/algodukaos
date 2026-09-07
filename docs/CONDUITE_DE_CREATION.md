@@ -276,4 +276,44 @@ Les deux projets n'existent pas l'un pour l'autre.
 
 ---
 
+## 11. Outils de production
+
+### Site web — algodukaos.fr
+Page vitrine statique deployee via GitHub Pages. Pas de backend.
+
+### Fedica — Distribution
+Plan Grow. Flux RSS → X, Facebook, Instagram, Threads.
+Publication automatique depuis la production locale.
+
+### Suno — Observation musicale
+Abonnement actif. Generation de musique courte (30s-2min) avec paroles
+pour les Reels, TikTok, Shorts.
+
+### Generateur de cartes actus — Outil local (a venir)
+Webapp locale (meme principe que le studio DigiFoot) pour generer
+des cartes visuelles style post X.
+
+**Fonctionnement prevu :**
+1. Coler une URL de tweet → import via l'API fxtwitter.com
+   (extrait : auteur, handle, texte, media, avatar)
+2. Editer/style la carte (fond terminal/cyan, texte, avatar)
+3. Preview en temps reel (format 4:5)
+4. Export PNG (960x1200px, scale 2x)
+
+**Style de la carte :**
+- Fond sombre + bordures cyan (pas de bordeaux comme DigiFoot)
+- Avatar Algo du Kaos + branding `@Algodukaos`
+- Police monospace (Courier New) pour le texte
+- Format 4:5 — optimise pour Instagram/Facebook
+
+**Stack technique (identique a DigiFoot) :**
+- Frontend vanilla JS (pas de framework)
+- Export PNG via DOM-to-canvas (pas html2canvas)
+- Import tweet via backend proxy → fxtwitter.com API
+- Stockage localStorage
+
+**Statut :** planifie, pas encore developpe.
+
+---
+
 *Ce document evolue. Toute modification doit etre validee avant d'etre appliquee.*
