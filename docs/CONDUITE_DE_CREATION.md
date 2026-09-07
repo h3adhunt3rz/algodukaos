@@ -100,14 +100,49 @@ Le spectateur repart avec une reflexion, pas avec une colere.
 
 ### Niveau 2 — Leger (30 min - 2h)
 
-**Format signature — quand on a un creneau.**
+**Formats signatures — quand on a un creneau.**
 
 | Format | Description | Plateforme |
 |--------|-------------|------------|
-| Observation video courte (30s-1min) | Voix off + visuel terminal anime + typewriter | YouTube Shorts, TikTok |
-| Short decode (2-3 min) | Un fait, une question, un constat | YouTube Shorts, TikTok |
+| Observation video courte (30s-1min) | Voix off + visuel terminal anime + typewriter | TikTok, Reels, Shorts |
+| Observation musicale (30s-2min) | Chanson courte via Suno + fond terminal anime | TikTok, Reels, Shorts, YouTube |
+| Short decode (2-3 min) | Un fait, une question, un constat | TikTok, Reels, Shorts |
 
-**Production :** texte + voix off (pas de facecam) + effets visuels existants (glitch, terminal, fog). Pas de montage lourd.
+**Production :** texte + voix off OU musique Suno + effets visuels existants (glitch, terminal, fog). Pas de facecam, pas de montage lourd.
+
+### Observation musicale — en detail
+
+**Outil :** Suno (abonnement actif)
+
+**Concept :** transformer une observation sur les medias/societe en chanson courte.
+Le personnage "Algo du Kaos" — une anomalie consciente qui observe le monde —
+se prete naturellement au format chanson.
+
+**Sujets pertinents :**
+- Les medias et leur maniere de presenter l'info
+- Les mecanismes de desinformation
+- Les citations typiques des experts / politiques
+- Le cycle de l'info en continu
+- Les sondages et leur reductionnisme
+
+**Le serious + humour = equilibre parfait :**
+- L'humour derriere un constat serieux = ce qui se partage le plus
+- Le personnage robotique qui observe les humains est naturellement drole
+- Tu peux faire rire ET faire reflechir dans le meme morceau
+
+**Production concrete :**
+1. Ecrire les paroles (observation + refrain percutant)
+2. Generer la musique via Suno (electro/ambient sombre)
+3. Creer un visuel simple (fond terminal anime + paroles qui defilent)
+4. Publier sur TikTok/Reels/Shorts (30s-2min)
+
+**Pourquoi c'est le meilleur compromis :**
+| | Video classique | Observation musicale |
+|--|----------------|---------------------|
+| Production | Lourde (script, tournage, montage) | Legere (Suno + visuel anime) |
+| Temps | 5-20h par video | 30min-1h par morceau |
+| Diffusion | YouTube principalement | TikTok, Reels, Shorts, YouTube |
+| Monetisation | YouTube AdSense | Facebook Reels Bonus, Instagram, TikTok |
 
 ### Niveau 3 — Engage (2-4h, exceptionnel)
 
@@ -128,7 +163,8 @@ Pas de facecam, pas de studio. Le format "documentaire court" suffit.
 | Frequence | Format | Effort | Priorite |
 |-----------|--------|--------|----------|
 | 2-3x / semaine | Post texte + image | Minimal | Quotidien, meme sans video |
-| 1-2x / semaine | Short video (30s-1min) | Leger | A produire en batch |
+| 1-2x / semaine | Observation musicale (Suno) | Leger | Format prioritaire pour les Reels |
+| 1-2x / semaine | Observation video courte | Leger | A produire en batch |
 | 2x / mois | Decryptage (5-8 min) | Engage | Seulement si le temps le permet |
 | 1x / mois | Parallele (8-12 min) | Engage | En periode calme |
 
