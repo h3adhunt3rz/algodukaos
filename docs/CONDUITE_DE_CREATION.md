@@ -91,6 +91,19 @@ Le spectateur repart avec une reflexion, pas avec une colere.
 | Post texte + image | Observation courte sur fond terminal/cyan | X, Threads |
 | Repost commente | Reprendre un fait d'actualite avec le prisme Algo | Instagram Stories |
 | Thread / fil | Decortiquer un sujet en 5-10 tweets | X |
+| Carte actu | Generer une carte visuelle depuis un post X (style terminal) | X, Instagram, Facebook |
+
+**Carte actu — en detail :**
+Format visuel genere a partir d'un post X (tweet). Meme principe que le studio DigiFoot :
+- Recuperer le texte + auteur du post X
+- Le placer sur un fond terminal/cyan avec l'avatar Algo du Kaos
+- Exporter en PNG (format 4:5 ou 1:1)
+- Partager sur les reseaux via Fedica
+
+**Utilite :**
+- Transforme un post texte en contenu visuel partageable
+- Permet de rebondir sur l'actualite rapidement
+- Donne du poids a un constat en le presentant comme une "observation officielle"
 
 **Exemple de post :**
 > [Fond sombre + texte cyan en style terminal]
@@ -165,6 +178,7 @@ Pas de facecam, pas de studio. Le format "documentaire court" suffit.
 | 2-3x / semaine | Post texte + image | Minimal | Quotidien, meme sans video |
 | 1-2x / semaine | Observation musicale (Suno) | Leger | Format prioritaire pour les Reels |
 | 1-2x / semaine | Observation video courte | Leger | A produire en batch |
+| Selon l'actualite | Carte actu (depuis X) | Minimal | Reagir vite a un sujet chaud |
 | 2x / mois | Decryptage (5-8 min) | Engage | Seulement si le temps le permet |
 | 1x / mois | Parallele (8-12 min) | Engage | En periode calme |
 
