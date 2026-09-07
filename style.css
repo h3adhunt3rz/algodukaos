@@ -415,23 +415,38 @@ h1.glitch::after {
 }
 
 .tile {
-    background: rgba(9, 13, 20, 0.85); /* Mat card background */
+    background: rgba(9, 13, 20, 0.9);
     border: 1px solid var(--card-border);
-    border-radius: 30px;
+    border-radius: 6px;
     position: relative;
-    transform-style: preserve-3d;
-    transition: transform 0.15s ease-out, box-shadow 0.3s ease;
+    transition: box-shadow 0.3s ease, border-color 0.3s ease;
     backdrop-filter: blur(15px);
     width: 100%;
     overflow: hidden;
     box-shadow: 0 15px 35px rgba(0, 0, 0, 0.7);
 }
 
+/* Scan-line overlay effect — data terminal style */
+.tile::after {
+    content: '';
+    position: absolute;
+    inset: 0;
+    background: repeating-linear-gradient(
+        0deg,
+        transparent,
+        transparent 2px,
+        rgba(0, 240, 255, 0.015) 2px,
+        rgba(0, 240, 255, 0.015) 4px
+    );
+    pointer-events: none;
+    z-index: 6;
+}
+
 .tile::before {
     content: '';
     position: absolute;
     inset: 0;
-    background: radial-gradient(circle at var(--x) var(--y), rgba(0, 240, 255, 0.15) 0%, transparent 45%);
+    background: radial-gradient(circle at var(--x, 50%) var(--y, 50%), rgba(0, 240, 255, 0.08) 0%, transparent 50%);
     pointer-events: none;
     z-index: 5;
 }
@@ -442,6 +457,7 @@ h1.glitch::after {
     overflow: hidden;
     position: relative;
     background: #020406;
+    border-bottom: 1px solid var(--card-border);
 }
 
 .tile-banner img {
@@ -460,8 +476,13 @@ h1.glitch::after {
     pointer-events: none;
 }
 
-.tile:hover .tile-banner img { 
-    transform: scale(1.03); 
+.tile:hover {
+    border-color: rgba(0, 240, 255, 0.5);
+    box-shadow: 0 15px 35px rgba(0, 0, 0, 0.7), 0 0 30px rgba(0, 240, 255, 0.1);
+}
+
+.tile:hover .tile-banner img {
+    transform: scale(1.02);
     filter: brightness(1) contrast(1.15);
 }
 
@@ -609,34 +630,50 @@ h1.glitch::after {
 }
 
 .big-button {
-    padding: 20px 50px;
+    padding: 18px 50px;
     background: transparent;
     color: var(--primary);
-    font-family: 'Space Grotesk', sans-serif;
+    font-family: 'Courier New', Courier, monospace;
     font-weight: 700;
-    font-size: 1.15rem;
-    letter-spacing: 1px;
+    font-size: 1rem;
+    letter-spacing: 2px;
+    text-transform: uppercase;
     text-decoration: none;
-    border-radius: 50px;
+    border-radius: 4px;
     display: inline-flex;
     align-items: center;
     justify-content: center;
-    gap: 15px;
-    transition: all 0.3s ease;
-    box-shadow: 0 0 15px rgba(0, 240, 255, 0.1);
-    border: 2px solid var(--primary);
+    gap: 12px;
+    transition: all 0.2s ease;
+    border: 1px solid var(--primary);
     cursor: pointer;
+    position: relative;
+    overflow: hidden;
+}
+
+.big-button::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: -100%;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(90deg, transparent, rgba(0, 240, 255, 0.1), transparent);
+    transition: left 0.5s ease;
+}
+
+.big-button:hover::before {
+    left: 100%;
 }
 
 .big-button:hover {
-    background: var(--primary);
-    color: #000;
-    transform: translateY(-3px);
-    box-shadow: 0 0 25px rgba(0, 240, 255, 0.4);
+    background: rgba(0, 240, 255, 0.08);
+    color: #fff;
+    box-shadow: 0 0 20px rgba(0, 240, 255, 0.15), inset 0 0 20px rgba(0, 240, 255, 0.05);
 }
 
-.big-button svg { transition: 0.3s; }
-.big-button:hover svg { transform: translateX(5px); }
+.big-button svg { transition: 0.2s; }
+.big-button:hover svg { transform: translateX(4px); }
 
 .legal { 
     margin-top: 60px; 
