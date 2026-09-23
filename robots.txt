@@ -1,4 +1,10 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://mrdigilink.com/sitemap.xml
+# ⛔ CORRIGÉ le 22/09/2026 — CETTE LIGNE DISAIT `https://mrdigilink.com/sitemap.xml`,
+# LE DOMAINE DE L'AUTRE PROJET, ET LE FICHIER N'EXISTAIT PAS.
+# ✏️ Un `robots.txt` qui pointe ailleurs fait crawler le mauvais site.
+# ⚠️ ET LA LIGNE NE POUVAIT PAS RESTER VRAIE SANS LE FICHIER : on l'a donc créé
+# (`sitemap.xml`, trois pages) plutôt que de la supprimer — une déclaration qui ne
+# correspond à rien est une déclaration fausse, même avec le bon domaine.
+Sitemap: https://algodukaos.fr/sitemap.xml

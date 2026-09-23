@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+  ⚠️ CE FICHIER EXISTE PARCE QUE `robots.txt` LE DÉCLARE.
+
+  Avant le 22/09/2026, la ligne `Sitemap:` de `robots.txt` pointait vers
+  `https://mrdigilink.com/sitemap.xml` — le domaine de l'AUTRE projet, et un
+  fichier qui n'existait pas. Deux erreurs en une ligne.
+
+  ⛔ On ne s'est pas contenté de corriger le domaine : une déclaration qui ne
+  correspond à aucun fichier reste une déclaration FAUSSE. On a donc écrit le
+  sitemap. C'est la règle du projet appliquée à un fichier de SEO — *« une
+  déclaration qui ne correspond pas à la réalité »* est exactement le piège
+  `AFPfr` (une watchlist qui disait `AFPfr`, des items qui disaient `afpfr`).
+
+  ⚠️ `lastmod` est la date de dernière modification RÉELLE des pages. À mettre à
+  jour quand elles changent — un `lastmod` figé ne trompe personne longtemps.
+-->
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+  <url>
+    <loc>https://algodukaos.fr/</loc>
+    <lastmod>2026-09-22</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>1.0</priority>
+  </url>
+  <url>
+    <loc>https://algodukaos.fr/mentions-legales.html</loc>
+    <lastmod>2026-09-22</lastmod>
+    <changefreq>yearly</changefreq>
+    <priority>0.3</priority>
+  </url>
+  <url>
+    <loc>https://algodukaos.fr/confidentialite.html</loc>
+    <lastmod>2026-09-22</lastmod>
+    <changefreq>yearly</changefreq>
+    <priority>0.3</priority>
+  </url>
+</urlset>
