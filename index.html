@@ -187,7 +187,16 @@
         const speed = 55; // Typing speed in milliseconds
 
         function runQueue() {
-            if (currentStep >= queue.length) return;
+            if (currentStep >= queue.length) {
+                // Relancer la séquence en boucle après 5 secondes de pause
+                setTimeout(() => {
+                    typewriterEl.innerHTML = "";
+                    currentStep = 0;
+                    charIndex = 0;
+                    runQueue();
+                }, 5000);
+                return;
+            }
 
             const step = queue[currentStep];
 
@@ -231,10 +240,16 @@
             }
         }
         
-        // Start typewriter on load
-        window.addEventListener('load', () => {
-            setTimeout(runQueue, 1000);
-        });
+        // Démarrage garanti du typewriter dès que le DOM est prêt (sans attendre les médias)
+        function startTypewriter() {
+            setTimeout(runQueue, 300);
+        }
+
+        if (document.readyState === 'interactive' || document.readyState === 'complete') {
+            startTypewriter();
+        } else {
+            document.addEventListener('DOMContentLoaded', startTypewriter);
+        }
 
         // Audio System (Single file thunder.mp3 containing both rain and thunder)
         let audioEnabled = false;
